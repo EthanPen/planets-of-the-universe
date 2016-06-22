@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<strong>Recently-discovered</strong>
+
+<nav>
+	<ul>
+		<li><a href="{{site.baseurl}}/news/" class="{% if page.url contains 'news' %}current{% endif %}">Planetly News</a></li>
+		<li><a href="{{site.baseurl}}/recently-discovered/" class="{% if page.url contains 'recently-discovered' %}current{% endif %}">Recently News</a></li>
+	<ul>
+</nav>
+
+
+{{content}}

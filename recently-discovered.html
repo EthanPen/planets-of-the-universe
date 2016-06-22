@@ -1,0 +1,15 @@
+---
+layout: news
+title: Recently-discovered
+---
+
+<h1>Recently-discovered</h1>
+
+<ul>
+	{% for rd in site.categories.recently-discovered limit:5 %}
+	<li>
+		<a href="{{site.baseurl}}{{rd.url}}">{{rd.title}}</a>
+		<p>{{rd.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>

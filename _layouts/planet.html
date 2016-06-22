@@ -1,0 +1,17 @@
+---
+layout: planets
+---
+
+<h2> {{page.title}} </h2>
+
+<img src="{{site.baseurl}}/img/planets/{{page.image}}" alt="planet of {{page.title}}">
+
+<dl>
+	<dt>Discoverer: </dt><dd>{{page.discoverer}}</dd>
+	<dt>Discovered: </dt><dd>{{page.discovered}}</dd>
+	<dt>Orbit: </dt><dd>{{page.orbit}}</dd>
+	<dt>Radius: </dt><dd>{{page.radius}}</dd>
+	<dt>tilt: </dt><dd>{{page.tilt}}</dd>
+</dl>
+
+{{content}}

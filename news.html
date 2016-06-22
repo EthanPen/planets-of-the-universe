@@ -1,5 +1,16 @@
 ---
-layout: default
+layout: news
+title: News
+changefreq: weekly
 ---
 
 <h1>News</h1>
+
+<ul>
+	{% for new in site.categories.news limit:5 %}
+	<li>
+		<a href="{{site.baseurl}}{{new.url}}">{{new.title}}</a>
+		<p>{{new.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
